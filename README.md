@@ -14,6 +14,7 @@ should be able to run with a simple docker-compose up command.
 - [Docker](https://docs.docker.com/engine/install/)
 - [Docker compose](https://docs.docker.com/compose/install/)
 - [Git](https://git-scm.com/downloads)
+- [Postman](https://www.postman.com/)
   
 ### Running the code locally (only for Linux & macOS)
 
