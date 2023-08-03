@@ -1,0 +1,32 @@
+version: '3'
+services:
+  assignment-database:
+    image: keinos/sqlite3:latest
+    container_name: "assignment-database"
+    ports: 
+     - '5000:5432'
+    volumes:
+      - sqlite_data:/var/lib/sqlite3
+    
+  assignment-api-server:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - '8080:8080'
+    
+    volumes: 
+     - .:/code
+    command: python manage.py runserver 8080
+    depends_on:
+      - assignment-database
+    environment:
+      - DJANGO_DB_ENGINE=django.db.backends.sqlite3
+      - DJANGO_DB_HOST=assignment-database  # Use the service name of the database container
+      - DJANGO_DB_PORT=5000
+      - DJANGO_DB_NAME=assignment-database
+      - DJANGO_DB_USER=admin123
+      - DJANGO_DB_PASSWORD=admin123
+
+volumes: 
+  sqlite_data: 
