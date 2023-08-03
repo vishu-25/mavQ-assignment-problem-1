@@ -15,7 +15,6 @@ git clone https://github.com/vishu-25/mavQ-assignment-problem-1.git
 cd mavQ-assignment-problem-1/src/
 chmod +x setup.sh 
 ./setup.sh
-
 ```
 #
 <!---
