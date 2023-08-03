@@ -10,10 +10,10 @@ should be able to run with a simple docker-compose up command.
 #
 
 ## Dependencies
-- [Python (version 3.7 or above)] (https://www.python.org/downloads/)
-- [Docker] (https://docs.docker.com/engine/install/)
-- [Docker compose] (https://docs.docker.com/compose/install/)
-- [Git] (https://git-scm.com/downloads)
+- [Python (version 3.7 or above)](https://www.python.org/downloads/)
+- [Docker](https://docs.docker.com/engine/install/)
+- [Docker compose](https://docs.docker.com/compose/install/)
+- [Git](https://git-scm.com/downloads)
   
 ### Running the code locally (only for Linux & macOS)
 
