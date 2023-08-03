@@ -1,0 +1,42 @@
+# MavQ internship assignment problem 1
+
+## Objective
+Create a JSON API Server that will receive GET and POST requests from any external client.
+The API server will connect with any SQL database (of your choice) and the server will be able
+to write the data received from APIs to the server and return the result based on the query. The
+read query will be able to support filters as well as defined by the data model. The entire stack
+(API Server & database) should be containerized in a docker container and the ecosystem
+should be able to run with a simple docker-compose up command.
+#
+### Running the code locally (only for Linux & macOS)
+
+```
+git clone https://github.com/vishu-25/mavQ-assignment-problem-1.git
+cd mavQ-assignment-problem-1/src/
+chmod +x setup.sh 
+./setup.sh
+
+```
+#
+<!---
+Specification 
+
+Data Model 
+
+1. Teacher <br>
+        a. teacher_id  <br>
+        b. name <br>
+        c. is_active <br> 
+        d. designation <br>
+
+
+2. Course <br>
+        a. course_id <br> 
+        b. course_mentor <br>
+        c. name <br>
+        d. start_date <br> 
+        e. end_date <br>
+        f. description <br>
+        g. Is_active <br>
+-->
+
