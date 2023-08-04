@@ -7,25 +7,7 @@ to write the data received from APIs to the server and return the result based o
 read query will be able to support filters as well as defined by the data model. The entire stack
 (API Server & database) should be containerized in a docker container and the ecosystem
 should be able to run with a simple docker-compose up command.
-#
 
-## Dependencies
-- [Python (version 3.7 or above)](https://www.python.org/downloads/)
-- [Docker](https://docs.docker.com/engine/install/)
-- [Docker compose](https://docs.docker.com/compose/install/)
-- [Git](https://git-scm.com/downloads)
-- [Postman](https://www.postman.com/)
-  
-### Running the code locally (only for Linux & macOS)
-
-```
-git clone https://github.com/vishu-25/mavQ-assignment-problem-1.git
-cd mavQ-assignment-problem-1/src/
-chmod +x setup.sh 
-./setup.sh
-```
-#
-<!---
 Specification 
 
 Data Model 
@@ -44,6 +26,36 @@ Data Model
         d. start_date <br> 
         e. end_date <br>
         f. description <br>
-        g. Is_active <br>
--->
+        
+#
+
+## Dependencies
+- [Python (version 3.7 or above)](https://www.python.org/downloads/)
+- [Docker](https://docs.docker.com/engine/install/)
+- [Docker compose](https://docs.docker.com/compose/install/)
+- [Git](https://git-scm.com/downloads)
+- [Postman](https://www.postman.com/)
+- [SQLite3](https://www.sqlite.org/index.html)
+  
+### To run the application locally using Docker, follow these steps (compatible with Linux and macOS):
+
+```
+git clone https://github.com/vishu-25/mavQ-assignment-problem-1.git
+cd mavQ-assignment-problem-1/src/
+chmod +x setup.sh 
+./setup.sh
+```
+
+#
+
+### To execute the code directly using Python, follow these steps:
+
+```
+git clone https://github.com/vishu-25/mavQ-assignment-problem-1.git
+cd mavQ-assignment-problem-1/src/
+pip install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver 8080
+```
 
